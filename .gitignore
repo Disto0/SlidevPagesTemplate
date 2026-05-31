@@ -1,0 +1,20 @@
+# Dependencies
+**/node_modules/
+
+# Build output
+dist/
+
+# Python venv (généré par l'extension Slidev VSCode)
+**/.venv/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VSCode
+**/.vscode/*
+**/!.vscode/extensions.json
