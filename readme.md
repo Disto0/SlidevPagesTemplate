@@ -17,47 +17,68 @@ ___
 - Install Slidev for vscode https://sli.dev/features/vscode-extensions
 - (optional) Install Code Spell Checker + your language extension
 - (optional) Install venv with python/uv in yours slides directories. (and Select venv Python interpreter with CTRL+Shift+P)
+- Clone this repo (or make a empty folder if you just want to try yourself manually without this repo)
 
 
 ---
 
-### \# 1.1 Install Slidev
+### 1.1 Install Slidev
 ___
+
+<br />
+
+From your new repo folder:
+
+<br />
 
 # /!\ its best to use pnpm if you want to use multiples slides. /!\
 
+<br />
+
 /!\ Warning /!\ There is an issue in the current last version (v52.15.2) https://github.com/slidevjs/slidev/issues/2605
 For the full pnpm installation, here is the workaround  (with the v52.15.0)
+
+<br />
 
 \# 1. If you haven't installed pnpm
 ```
 npm i -g pnpm
 ```
 
+<br />
+
 \# 2. If you have this error: [ERROR] The configured global bin directory "C:\Users\[USER]\AppData\Local\pnpm\bin" is not in PATH
 ```
 pnpm setup # => and restart the terminal after...
 ```
 
+<br />
+
 \# 3. Launch the install of the version you want | OR | pnpm create slidev for the lastest
 ```
-pnpm create slidev@52.15.0 # => and answer "no" to "√ Install and start it now using pnpm?"
+pnpm create slidev@52.15.0 # => give a folder name, and answer "no" to "√ Install and start it now using pnpm?"
 ```
+
+<br />
 
 \# 4. Now edit the generated package.json in the new freshly created folder, and remove the "^"  before the version number in the file. "@slidev/cli": "^52.15.0",   => "@slidev/cli": "52.15.0",  
 
+<br />
+
 \# 5. (Optional) Add this entry in the .npmrc file: onlyBuiltDependencies[]=esbuild | OR | resolve any issues with esbuild yourself with the command given in the error.
+
+<br />
 
 \# 6. Now launch the install in the folder
 ```
-cd slidev # your folder
+cd slide1 # <-- your folder here
 pnpm install
 ```
 
 
 ---
 
-#### (optional) \# 1.1.1 Cleaning demo files
+#### (optional) 1.1.1 Cleaning demo files
 ___
 
 Normally, you can safely remove the following files, they are related to the demo slides.md:
@@ -71,7 +92,7 @@ Normally, you can safely remove the following files, they are related to the dem
 
 ---
 
-### \# 1.2 UV, Venv
+### 1.2 UV, Venv
 ___
 
 - https://docs.astral.sh/uv/
@@ -83,7 +104,7 @@ uv venv
 
 ---
 
-## \# 2. Run Slidev
+## 2. Run Slidev
 ___
 
 ```
@@ -95,20 +116,20 @@ pnpm exec 'slidev "slides.md" --port 3030'  # or npm exec -c 'slidev "slides.md"
 
 ---
 
-## \# 3. Slidev Local build (for testing):
+## 3. Slidev Local build (for testing):
 ___
 
-(if your slides are in Slide1 directory)
+(if your slides are in slide1 directory)
 
 ```
-cd Slide1 
-npx slidev build slides.md --base /Slide1/ --out ../dist/Slide1
+cd slide1 
+npx slidev build slides.md --base /slide1/ --out ../dist/slide1
 ```
 
 
 ---
 
-### \# 3.1 local build testing:
+### 3.1 local build testing:
 ___
 
 # From dist/ folder
