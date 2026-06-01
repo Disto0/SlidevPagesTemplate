@@ -1,3 +1,13 @@
+# Intro
+___
+
+This is a repo template that you can clone and use as base, if you want to:
+
+- Use that repo for storing your slidev slides.
+- Have an editable index.html file at root.
+- Have an auto build and deployment in your github pages.
+
+
 # Install
 ___
 
