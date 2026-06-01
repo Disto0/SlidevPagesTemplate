@@ -8,9 +8,9 @@ This is a repo template that you can clone and use as base, if you want to:
 - Have an auto build and deployment in your github pages.
 
 
-# prerequisites (SLIDEV Local)
+# \# Prerequisites (SLIDEV Local)
 
-## Setup
+## 1. Setup
 ___
 
 - Install Node.js
@@ -21,19 +21,7 @@ ___
 
 ---
 
-### UV, Venv
-___
-
-- https://docs.astral.sh/uv/
-
-``` PS
-uv venv
-```
-
-
----
-
-### Install Slidev
+### \# 1.1 Install Slidev
 ___
 
 # /!\ its best to use pnpm if you want to use multiples slides. /!\
@@ -69,7 +57,7 @@ pnpm install
 
 ---
 
-#### (optional) Cleaning demo files
+#### (optional) \# 1.1.1 Cleaning demo files
 ___
 
 Normally, you can safely remove the following files, they are related to the demo slides.md:
@@ -83,7 +71,19 @@ Normally, you can safely remove the following files, they are related to the dem
 
 ---
 
-## Run Slidev
+### \# 1.2 UV, Venv
+___
+
+- https://docs.astral.sh/uv/
+
+``` PS
+uv venv
+```
+
+
+---
+
+## \# 2. Run Slidev
 ___
 
 ```
@@ -95,7 +95,7 @@ pnpm exec 'slidev "slides.md" --port 3030'  # or npm exec -c 'slidev "slides.md"
 
 ---
 
-## Slidev Local build (for testing):
+## \# 3. Slidev Local build (for testing):
 ___
 
 (if your slides are in Slide1 directory)
@@ -108,7 +108,7 @@ npx slidev build slides.md --base /Slide1/ --out ../dist/Slide1
 
 ---
 
-### local build testing:
+### \# 3.1 local build testing:
 ___
 
 # From dist/ folder
@@ -121,7 +121,7 @@ python -m http.server 8080
 
 ---
 
-## For Memo only (this is already in this repo): .gitignore for Git repository:
+# \# For Memo only (this is already in this repo): .gitignore for Git repository:
 ____
 
 ```
@@ -151,7 +151,7 @@ Thumbs.db
 
 ---
 
-## For Memo only (this is already in this repo): Online (github) build:
+# \# For Memo only (this is already in this repo): Online (github) build:
 ___
 
 - Create a repo.
@@ -165,7 +165,7 @@ ___
 
 ---
 
-### deploy.yml:
+# \# deploy.yml:
 ___
 
 
@@ -235,7 +235,7 @@ jobs:
 
 ---
 
-## Links
+# \# Links
 ___
 
 
