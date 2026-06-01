@@ -20,9 +20,13 @@ uv venv
 
 
 ---
+layout: none
+---
 
 # Install Slidev
 ___
+
+
 /!\ Warning /!\ There is an issue in the current last version (v52.15.2) https://github.com/slidevjs/slidev/issues/2605
 For the full pnpm installation, here is the workaround  (with the v52.15.0)
 
@@ -105,7 +109,8 @@ python -m http.server 8080
 
 
 ---
-
+layout: none
+---
 # .gitignore for Git repository:
 ____
 
@@ -149,12 +154,14 @@ ___
 
 
 ---
+layout: none
+---
 
 # deploy.yml:
 ___
 
 
-```
+``` 
 name: Deploy pages
 
 on:
