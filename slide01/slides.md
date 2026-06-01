@@ -55,6 +55,3 @@ echo %result%
 </div>
 
 ---
-src: ../readme.md
-hide: false
----
