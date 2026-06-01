@@ -1,4 +1,4 @@
-# Intro
+# SlidevPagesTemplate
 ___
 
 This is a repo template that you can clone and use as base, if you want to:
@@ -8,7 +8,9 @@ This is a repo template that you can clone and use as base, if you want to:
 - Have an auto build and deployment in your github pages.
 
 
-# Install
+# prerequisites (SLIDEV Local)
+
+## Setup
 ___
 
 - Install Node.js
@@ -19,7 +21,7 @@ ___
 
 ---
 
-# UV, Venv
+### UV, Venv
 ___
 
 - https://docs.astral.sh/uv/
@@ -30,12 +32,11 @@ uv venv
 
 
 ---
-layout: none
----
 
-# Install Slidev
+### Install Slidev
 ___
 
+# /!\ its best to use pnpm if you want to use multiples slides. /!\
 
 /!\ Warning /!\ There is an issue in the current last version (v52.15.2) https://github.com/slidevjs/slidev/issues/2605
 For the full pnpm installation, here is the workaround  (with the v52.15.0)
@@ -68,7 +69,7 @@ pnpm install
 
 ---
 
-# (optional) Cleaning demo files
+#### (optional) Cleaning demo files
 ___
 
 Normally, you can safely remove the following files, they are related to the demo slides.md:
@@ -82,7 +83,7 @@ Normally, you can safely remove the following files, they are related to the dem
 
 ---
 
-# Run
+## Run Slidev
 ___
 
 ```
@@ -94,7 +95,7 @@ pnpm exec 'slidev "slides.md" --port 3030'  # or npm exec -c 'slidev "slides.md"
 
 ---
 
-# Local build:
+## Slidev Local build (for testing):
 ___
 
 (if your slides are in Slide1 directory)
@@ -107,7 +108,7 @@ npx slidev build slides.md --base /Slide1/ --out ../dist/Slide1
 
 ---
 
-# local build testing:
+### local build testing:
 ___
 
 # From dist/ folder
@@ -119,9 +120,8 @@ python -m http.server 8080
 
 
 ---
-layout: none
----
-# .gitignore for Git repository:
+
+## For Memo only (this is already in this repo): .gitignore for Git repository:
 ____
 
 ```
@@ -151,7 +151,7 @@ Thumbs.db
 
 ---
 
-# Online (github) build:
+## For Memo only (this is already in this repo): Online (github) build:
 ___
 
 - Create a repo.
@@ -164,10 +164,8 @@ ___
 
 
 ---
-layout: none
----
 
-# deploy.yml:
+### deploy.yml:
 ___
 
 
@@ -237,13 +235,18 @@ jobs:
 
 ---
 
-Links
+## Links
 ___
 
 
 Slidev: https://sli.dev/guide/
+
 Slidev Host: https://sli.dev/guide/hosting
+
 Markdown: https://daringfireball.net/projects/markdown/
+
 Markdown Cheatsheet: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
 Writing on github: https://docs.github.com/fr/get-started/writing-on-github
+
 Mermaid: https://mermaid.js.org/intro/
